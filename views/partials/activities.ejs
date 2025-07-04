@@ -1,0 +1,23 @@
+<section class="activities">
+  <div class="container">
+    <h2><i class="fas fa-calendar-alt"></i> Church Activities</h2>
+    <table class="activity-table">
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Days</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% activities.forEach(activity => { %>
+          <tr>
+            <td><%= activity.name %></td>
+            <td><%= activity.days %></td>
+            <td><%= activity.time %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</section>

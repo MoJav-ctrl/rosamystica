@@ -1,0 +1,14 @@
+<section class="clergy">
+  <div class="container">
+    <h2><i class="fas fa-cross"></i> Our Priests</h2>
+    <div class="clergy-grid">
+      <% clergy.forEach(member => { %>
+        <div class="clergy-member">
+          <img src="/images/<%= member.image %>" alt="<%= member.name %>">
+          <h3><%= member.name %></h3>
+          <p><%= member.role %></p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
